@@ -1,0 +1,23 @@
+[general]
+import = [
+    "~/.config/alacritty/themes/catppuccin-mocha.toml",
+]
+
+live_config_reload = true
+
+[font]
+normal = { family = "GeistMono Nerd Font Propo", style = "SemiBold"}
+bold = { family = "GeistMono Nerd Font Propo", style = "UltraBlack"}
+size = 16.0
+
+[window]
+# padding = { x = 7, y = 7 }
+dynamic_padding = true
+
+[keyboard]
+bindings = [
+    {key = "O", mods = "Control", action = "DecreaseFontSize"},
+    {key = "Y", mods = "Control", action = "IncreaseFontSize"},
+    {key = "K", mods = "Control", action = "ResetFontSize"},
+    {key = "I", mods = "Alt", action = "CreateNewWindow"},
+]
